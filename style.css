@@ -75,8 +75,35 @@ h2{
     color: #a87d2c;
     text-align: center;
 }
-form{
+/* nav, form{
     width: 50%;
     text-align: center;
-    margin-left: 20px;
+} */
+
+/* .....................Reservation.................... */
+
+.order-form {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/restaurant-interieur.jpg) center center fixed no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+.order-form form{
+    padding-top: 125px;
+}
+.order-form h2{
+    font-size: 36px;
+    font-family: serif;
+    color: #ffff;
+}
+/* .order-form form select, input{
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    
+} */
+.order-form form button{
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    
 }
