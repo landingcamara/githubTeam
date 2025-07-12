@@ -20,28 +20,28 @@
                 <li><a href="#"><img src="./icones/youtube.png" width="10px" height="10px" alt=""></a></li>
             </ul>
         </div>
-        <nav class="cc-navbar d-flex navbar navbar-expand-lg position-fixed w-100">
+        <nav class="cc-navbar d-flex navbar navbar-expand-lg position-fixed navbar-custom w-100">
             <div class="container-fluid">
                 <a class="navbar-brand text-uppercase mx-4 py-3" href="#"><img src="images/logo-restaut.png" style="width: 100px; height: 40px;" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar-" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="btn nav-link active" id="navBtn" aria-current="page" href="#principal">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="btn nav-link" id="navBtn" href="#">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Galerie</a>
+                            <a class="btn nav-link" id="navBtn" href="#">Galerie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Réservation</a>
+                            <a class="btn nav-link" id="navBtn" href="#order-form">Réservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
+                            <a class="btn nav-link" id="navBtn" href="#">Contacts</a>
                         </li>
                         
                     </ul>
@@ -55,7 +55,9 @@
         </nav>
     </header>
 
-    <section class="principal d-flex justify-content-center align-items-center pt-5">
+    <!-- #ACCUEIL -->
+
+    <section class="principal d-flex justify-content-center align-items-center pt-5" id="principal">
         <div class="container my-5 py-5">
             <div class="row">
                 <div class="col md-6">
@@ -63,7 +65,7 @@
                     <h2 class="text-capitalze mixed">Amadou Faye</h2>
                     <h4 class="text-uppercase py-3 joan">saveurs local, esprit familial.</br> dégustez l'authenticité des saveurs</br> sénégalaises</h4>
                     <p style="text-align: center; margin: 5px;">
-                        <button onclick="window.open('reservation.html', '_blank')" class="btn" data-bs-toggle="collapse">Reserver une table</button>
+                        <button onclick="window.open('#order-form', '_blank')" class="btn" data-bs-toggle="collapse">Reserver une table</button>
                     </p>
                 </div>
                 <div class="col md-6"></div>
@@ -71,7 +73,9 @@
         </div>
     </section>
 
-    <!-- <section class="cc-menu py-5">
+    <!-- #LE MENU -->
+
+    <section class="cc-menu py-5">
         <div class="container">
             <div class="row">
                 <div class="card-header py-5 ">
@@ -117,9 +121,86 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
+
+    <!-- RESERVATION -->
+    <section class="order-form mb-2 py-5" id="order-form">
+        <div class="container">
+            <form>
+                <h2 class="merriweather text-center text-ligth mb-4">Formulaire de réservation</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Votre Nom">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-utensils"></i></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Choisir un menu</option>
+                                <option value="1">Riz au poisson</option>
+                                <option value="2">Pizza</option>
+                                <option value="3">Double Burger</option>
+                                <option value="3">Pannini Milano</option>
+                                <option value="3">Soupou kandia</option>
+                                <option value="3">Yassa Poulet</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-sort-numeric-up-alt"></i></label>
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Nombre de Tables</option>
+                                <option value="1">Table VIP</option>
+                                <option value="2">Table pour deux</option>
+                                <option value="3">Table pour plusieurs</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-calendar"></i></span>
+                            <input type="datetime" class="form-control" placeholder="jj/mm/aa">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Votre E-mail">
+                            <span class="input-group-text" id="basic-addon2"><i class="fas fa-at"></i></span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="Numéro de téléphone">
+                            <span class="input-group-text" id="basic-addon3"><i class="fas fa-phone"></i></span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Adresse ex: Fann rue 11">
+                            <span class="input-group-text" id="basic-addon4"><i class="fas fa-home"></i></span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="time" class="form-control" placeholder="">
+                            <!-- <span class="input-group-text" id="basic-addon2"><i class="fas fa-clock"></i></span> -->
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid  fa-users"></i></span>
+                        <input type="text" class="form-control" placeholder="Préciser le nombre de personnes Ex: 15">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-circle-info"></i></span>
+                        <textarea class="form-control" aria-label="With textarea" placeholder="Autres information"></textarea>
+                    </div> 
+                </div>
+
+                <button class="btn btn-outline-success rounded-0 " type="submit">Valider</button>
+                <button class="btn btn-outline-danger rounded-0" type="close">Annuler</button>
+            </form>
+        </div>
+    </section>
+
 
     <!--<script src="assets/js/bootstrap.bundle.min.js"></script> lien serveur=>-->
+
+    <script src="./script.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist"
      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQQqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" ></script>
   </body>
