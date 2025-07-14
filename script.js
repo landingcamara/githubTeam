@@ -14,3 +14,9 @@
  btn.addEventListener("click", () => {
      btn.classList.toggle("clicked");
  });
+
+ let quantite = 0;
+  function changerQuantite(val) {
+    quantite = Math.max(0, quantite + val); // empêche valeur négative
+    document.getElementById('quantite').innerText = quantite;
+  }

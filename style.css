@@ -81,10 +81,10 @@ nav{
     color: #a87d2c;
     font-weight: 600;
 } 
-/* .....................PARTIE SECTION ............................ */
+/* .....................PARTIE SECTION ACCUEIL ............................ */
 
 .principal{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond-ecran.jpg) center center fixed no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond01.jpg) center center fixed no-repeat;
     height: 900px;
     background-size: cover;
     margin: 0 30px;
@@ -141,4 +141,21 @@ h2{
     margin: 20px;
     width: 100px;
     
+}
+
+/* .................PARTIE MENU............... */
+
+.cc-menu {
+    height: 1200px;
+    margin: 5px 30px;
+    background-color: #F1ECE3;
+}
+.cc-menu .card-body h5 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.cc-menu .card-body .card-prix {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
 }
