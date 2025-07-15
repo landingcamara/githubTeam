@@ -32,7 +32,7 @@
                             <a class="btn nav-link active" id="navBtn" aria-current="page" href="#principal">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link" id="navBtn" href="#">Menu</a>
+                            <a class="btn nav-link" id="navBtn" href="#cc-menu">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn nav-link" id="navBtn" href="#">Galerie</a>
@@ -75,27 +75,90 @@
 
     <!-- #LE MENU -->
 
-    <section class="cc-menu py-5">
+    <section class="cc-menu d-flex py-5 " id="cc-menu">
         <div class="container">
             <div class="row">
-                <div class="card-header py-5 ">
+                <div class="enTete card-header py-5 ">
                     <h6>Restaurant Amadou Faye</h6>
-                    <h1>MENU</h1>
-                    <ul>
-                        <li><a href="#" class="btn btn-primary">Plats</a></li>
-                        <li><a href="#" class="btn btn-primary">Boisson</a></li>
-                        <li><a href="#" class="btn btn-primary">Desert</a></li>
+                    <h1>LE MENU</h1>
+                    <ul class="plat d-flex align-items-center my-4 ">
+                        <li><a href="#" class="btn ">Plats</a></li>
+                        <li><a href="#" class="btn ">Boisson</a></li>
+                        <li><a href="#" class="btn ">Desert</a></li>
                     </ul>
                 </div>              
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+            <div id="premierTrait"></div>
+
+            <div class="row row-cols-1 row-cols-md-3 mx-5 my-5">
+                <div class="col-md-4 mb-3">
                         <div class="card">
-                            <img src="./images/pizza1.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
+                            <img src="./images/pizza1.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-prix">2000 fcfa</h5>
                                 <div class="d-flex gap-5">
                                     <h5 class="card-title">Card title</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="./images/Panini Milano.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-prix">2000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Card title</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./images/burger.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-prix">6000 fcfa</h5>
+                            <div class="d-flex gap-5">
+                                <h5 class="card-title">Card title</h5>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                    <span id="quantite" class="fw-bold">0</span>
+                                    <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 my-5">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./images/riz poisson.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-prix">3000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Riz au poisson</h5>
                                     <div class="d-flex justify-content-center align-items-center gap-2">
                                         <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
                                         <span id="quantite" class="fw-bold">0</span>
@@ -104,18 +167,18 @@
                                 </div>
 
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Commander</a>
-                                <a href="#" class="btn btn-info">Réservation</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
                         </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4 mb-3">
                         <div class="card">
-                            <img src="./images/burger.jpg" class="card-img-top" alt="...">
+                            <img src="./images/soupou kandia.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-prix">2000 fcfa</h5>
+                                <h5 class="card-prix">5000 fcfa</h5>
                                 <div class="d-flex gap-5">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Soupou kandia </h5>
                                     <div class="d-flex justify-content-center align-items-center gap-2">
                                         <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
                                         <span id="quantite" class="fw-bold">0</span>
@@ -123,18 +186,18 @@
                                     </div>
                                 </div>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Commander</a>
-                                <a href="#" class="btn btn-info">Réservation</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
                         </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4 mb-3">
                         <div class="card">
-                            <img src="./images/Panini Milano.jpg" class="card-img-top" alt="...">
+                            <img src="./images/yassa poulet.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-prix">2000 fcfa</h5>
+                                <h5 class="card-prix">5000 fcfa</h5>
                                 <div class="d-flex gap-5">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Yassa Poulet</h5>
                                     <div class="d-flex justify-content-center align-items-center gap-2">
                                         <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
                                         <span id="quantite" class="fw-bold">0</span>
@@ -142,12 +205,15 @@
                                     </div>
                                 </div>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Commander</a>
-                                <a href="#" class="btn btn-info">Réservation</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
                         </div>
-                </div>
+                    </div>
             </div>
+            
+            <div id="deuxiemeTrait"></div>
+
         </div>
     </section> 
 
