@@ -20,33 +20,45 @@
                 <li><a href="#"><img src="./icones/youtube.png" width="10px" height="10px" alt=""></a></li>
             </ul>
         </div>
-        <nav class="cc-navbar d-flex navbar navbar-expand-lg position-fixed navbar-custom w-100">
+<<<<<<< HEAD
+        <nav class="cc-navbar d-flex navbar navbar-expand-lg position-fixed w-100">
+=======
+        <nav class="cc-navbar d-flex navbar navbar-expand-lg position-fixed navbar-custom g w-100">
+>>>>>>> 7cd7d738cec2b48e247965574e88eeb6076659dc
             <div class="container-fluid">
                 <a class="navbar-brand text-uppercase mx-4 py-3" href="#"><img src="images/logo-restaut.png" style="width: 100px; height: 40px;" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-" id="navbarSupportedContent">
+<<<<<<< HEAD
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+=======
+                <div class="collapse navbar-collapse gap-5" id="navbarSupportedContent">
+>>>>>>> 7cd7d738cec2b48e247965574e88eeb6076659dc
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="btn nav-link active" id="navBtn" aria-current="page" href="#principal">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: red;">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link" id="navBtn" href="#">Menu</a>
+<<<<<<< HEAD
+                            <a class="nav-link" href="#" style="color: red;">Menu</a>
+=======
+                            <a class="btn nav-link" id="navBtn" href="#cc-menu">Menu</a>
+>>>>>>> 7cd7d738cec2b48e247965574e88eeb6076659dc
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link" id="navBtn" href="#">Galerie</a>
+                            <a class="nav-link" href="#" style="color: red;">Galerie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link" id="navBtn" href="#order-form">Réservation</a>
+                            <a class="nav-link" href="#" style="color: red;">Réservation</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn nav-link" id="navBtn" href="#">Contacts</a>
+                            <a class="nav-link" href="#" style="color: red;">Contacts</a>
                         </li>
                         
                     </ul>
                     <form class="d-flex sm-5" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search"/>
+                        <input class="form-control me-4" type="search" placeholder="Recherche" aria-label="Search"/>
                         <button class="btn " type="submit">Commander</button>
                     </form>
                     
@@ -55,17 +67,15 @@
         </nav>
     </header>
 
-    <!-- #ACCUEIL -->
-
-    <section class="principal d-flex justify-content-center align-items-center pt-5" id="principal">
+    <section class="principal d-flex justify-content-center align-items-center pt-5">
         <div class="container my-5 py-5">
             <div class="row">
                 <div class="col md-6">
                     <h4 class="text-uppercase py-3 joan ">Bienvenue au Restaurant</h4>
-                    <h2 class="text-capitalze mixed">Amadou Faye</h2>
+                    <h2 class="text-capitalze mixed">Amadou Diallo</h2>
                     <h4 class="text-uppercase py-3 joan">saveurs local, esprit familial.</br> dégustez l'authenticité des saveurs</br> sénégalaises</h4>
                     <p style="text-align: center; margin: 5px;">
-                        <button onclick="window.open('#order-form', '_blank')" class="btn" data-bs-toggle="collapse">Reserver une table</button>
+       git g                 <button class="btn">Reserver une table</button>
                     </p>
                 </div>
                 <div class="col md-6"></div>
@@ -73,88 +83,166 @@
         </div>
     </section>
 
-    <!-- #LE MENU -->
-
+<<<<<<< HEAD
     <section class="cc-menu py-5">
         <div class="container">
             <div class="row">
-                <div class="card-header py-5 ">
+                <div class="card-header"></div>
+                
+                <div class="card-content">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+=======
+    <!-- #LE MENU -->
+
+    <section class="cc-menu d-flex py-5 " id="cc-menu">
+        <div class="container">
+            <div class="row">
+                <div class="enTete card-header py-5 ">
                     <h6>Restaurant Amadou Faye</h6>
-                    <h1>MENU</h1>
-                    <ul>
-                        <li><a href="#" class="btn btn-primary">Plats</a></li>
-                        <li><a href="#" class="btn btn-primary">Boisson</a></li>
-                        <li><a href="#" class="btn btn-primary">Desert</a></li>
+                    <h1>LE MENU</h1>
+                    <ul class="plat d-flex align-items-center my-4 ">
+                        <li><a href="#" class="btn ">Plats</a></li>
+                        <li><a href="#" class="btn ">Boisson</a></li>
+                        <li><a href="#" class="btn ">Desert</a></li>
                     </ul>
                 </div>              
             </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+            <div id="premierTrait"></div>
+
+            <div class="row row-cols-1 row-cols-md-3 mx-5 my-5">
+                <div class="col-md-4 mb-3">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="./images/pizza1.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-prix">2000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Card title</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
                         </div>
                 </div>
-                <div class="col">
+                <div class="col-md-4 mb-3">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="./images/Panini Milano.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-prix">2000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Card title</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
                         </div>
                 </div>
-                <div class="col">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./images/burger.jpg" style="width: auto; height: 200px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-prix">6000 fcfa</h5>
+                            <div class="d-flex gap-5">
                                 <h5 class="card-title">Card title</h5>
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                    <span id="quantite" class="fw-bold">0</span>
+                                    <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
                             </div>
+>>>>>>> 7cd7d738cec2b48e247965574e88eeb6076659dc
                         </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="row row-cols-1 row-cols-md-3 my-5">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="./images/riz poisson.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-prix">3000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Riz au poisson</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="./images/soupou kandia.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-prix">5000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Soupou kandia </h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <img src="./images/yassa poulet.jpg" style="width: auto; height: 240px;" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-prix">5000 fcfa</h5>
+                                <div class="d-flex gap-5">
+                                    <h5 class="card-title">Yassa Poulet</h5>
+                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                        <button class="btn btn-outline-success rounded-circle" onclick="changerQuantite(1)">+</button>
+                                        <span id="quantite" class="fw-bold">0</span>
+                                        <button class="btn btn-outline-danger  rounded-circle" onclick="changerQuantite(-1)">−</button>
+                                    </div>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <a href="#" style="background-color: #cf9c3b;" class="btn ">Commander</a>
+                                <a href="#order-form" style="background-color: #cf593b;" class="btn ">Réservation</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <div id="deuxiemeTrait"></div>
+
         </div>
     </section> 
-    <!--Galerie-->
-  <section>
-      <div class="container">
-          <div class="row">
-             <div id="carouselExampleIndicators" class="carousel slide">
-           <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-           </div>
-           <div class="carousel-inner">
-              <div class="carousel-item active">
-                 <img src="./images/fond-ecran.jpg" class="d-block w-100" alt="...">
-             </div>
-             <div class="carousel-item">
-                 <img src="./images/fond-ecran.jpg"  class="d-block w-100" alt="...">
-             </div>
-             <div class="carousel-item">
-                 <img src="./images/fond-ecran.jpg"  class="d-block w-100" alt="...">
-             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-          </button>
-      </div>  
-          </div>
-      </div>
-  </section>
+
     <!-- RESERVATION -->
     <section class="order-form mb-2 py-5" id="order-form">
         <div class="container">
@@ -228,11 +316,10 @@
             </form>
         </div>
     </section>
-    
 
+
+>>>>>>> 7cd7d738cec2b48e247965574e88eeb6076659dc
     <!--<script src="assets/js/bootstrap.bundle.min.js"></script> lien serveur=>-->
-
-    <script src="./script.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist"
      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQQqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous" ></script>
   </body>
