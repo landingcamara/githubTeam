@@ -81,11 +81,11 @@ nav{
     color: #a87d2c;
     font-weight: 600;
 } 
-/* .....................PARTIE SECTION ............................ */
+/* .....................PARTIE SECTION ACCUEIL ............................ */
 
 .principal{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond-ecran.jpg) center center fixed no-repeat;
-    height: 900px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond01.jpg) center center fixed no-repeat;
+    height: 800px;
     background-size: cover;
     margin: 0 30px;
     padding: 20px;
@@ -141,4 +141,65 @@ h2{
     margin: 20px;
     width: 100px;
     
+}
+
+/* .................PARTIE MENU............... */
+
+.cc-menu {
+     background: linear-gradient(#F1ECE3), fixed no-repeat;
+
+    height: 1800px;
+    margin: 5px 30px;
+    padding-top: calc(100px + 1rem);
+    background-color: #F1ECE3;
+}
+.cc-menu .enTete {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+.cc-menu .enTete h6 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.cc-menu .enTete h1{
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 0.35rem;
+    color: #b64225;
+}
+.cc-menu .enTete ul {
+
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.cc-menu .enTete ul li {
+    width: 180px;
+    border-radius: 10px;
+    background-color: #cf9c3b;
+    color: #000;
+}
+#premierTrait{
+    height: 1PX;
+    width: 100%;
+     background-color: #000;
+    margin: auto;
+    box-shadow: 1px 3px 2px rgb(75, 74, 74);
+}
+.cc-menu .card-body .card-prix {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+}
+
+#deuxiemeTrait{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+    box-shadow: 1px 3px 2px rgb(75, 74, 74);
 }
