@@ -1,0 +1,601 @@
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: 1rem solid rgba(255,255,255,.3);
+}
+
+
+html{
+   
+    scroll-behavior: smooth;
+}
+.partie-1{
+   max-height: 30px;
+    display:grid; 
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    padding: 0 0px 0px 8px;
+    background-color: rgb(207, 60, 7);
+
+    position: fixed;
+}
+h6{
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+.partie-1 ul{
+    display: flex;
+    flex: 1;
+    margin-left: 70%;
+}
+.partie-1 ul li {
+    list-style: none;
+    margin: 5px;
+}
+nav{
+    /* background-color: #c7bfaf; bg-body-tertiary */
+    margin-top: 30px;
+}
+.navbar-custom {
+    transition: all 0.3s ease;
+}
+.navbar-scrolled {
+    background-color: #343a40;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+   outline: none;
+   box-shadow: none;
+}
+.cc-navbar{
+    background-color: #F1ECE3;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 3px 1px 3px rgba(255,255,255,0.54);
+}
+.cc-navbar form button{
+    background-color: #cf9c3b;
+}
+.cc-navbar .nav-link {
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom 0.4s ease-in-out, border-color 0.2s ease;
+}
+.cc-navbar .nav-link:hover, .nav-link:active {
+    color: #a87d2c;
+    padding-bottom: 20px;
+    border-bottom-color: var(--bs-warning);
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #cf9c3b;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.cc-navbar .btn.clicked {
+    color: #a87d2c;
+    font-weight: 600;
+} 
+
+section{
+    padding: 2rem;
+}
+/* .....................PARTIE SECTION ACCUEIL ............................ */
+
+.principal{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond01.jpg) center center no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0 30px;
+    padding: 20px;
+    align-items: center;
+
+}
+.principal button{
+    background-color: #cf9c3b;
+}
+h4{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    font-family: serif;
+    padding: 1rem 0;
+    color: #ffff;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+h2{
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: impact, serif;
+    color: #a87d2c;
+    text-align: center;
+}
+
+
+/* .....................Reservation.................... */
+
+
+/* .................PARTIE MENU............... */
+
+.cc-menu {
+     background: linear-gradient(#F1ECE3), fixed no-repeat;
+
+    min-height: 100vh;
+    margin: 5px 30px;
+    padding-top: calc(100px + 1rem);
+    background-color: #F1ECE3;
+}
+
+.cc-menu .box-container .box{
+    border: 1px solid rgb(224, 222, 222);
+    background-color:#ffff;
+}
+.cc-menu .box-container .box image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+.cc-menu .box-container .box img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cc-menu .box-container .box .content{
+    padding: 1rem;
+} 
+.cc-menu .box-container .box .content .card-prix{
+    font-size: 20px;
+    font-weight: 600;
+    color: #cf9c3b;
+    text-align: right;
+}
+.cc-menu .box-container .box .content .cart-title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #000;
+}
+.cc-menu .box-container .box .content .cart-title:hover{
+    color: var(--main-color);
+}
+.cc-menu .box-container .box .content .textBig{
+    padding: 5px 0;
+} 
+.cc-menu .box-container .box .content .textBig .quantite button{
+    width: 35%;
+    height: auto;
+}
+.cc-menu .box-container .box .content p{
+    font-size: 0.9rem;
+    line-height: 1.1;
+    color: #000;
+}
+.cc-menu .enTete {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+}
+
+.cc-menu .enTete h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.cc-menu .enTete h1{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.35rem;
+    color: #b64225;
+}
+.cc-menu .enTete ul {
+
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0 10%;
+    gap: 50px;
+}
+.cc-menu .enTete ul li {
+    width: 50%;
+    border-radius: 10px;
+    background-color: #cf9c3b;
+    color: #000;
+}
+#premierTrait{
+    height: 1PX;
+    width: 100%;
+     background-color: #000;
+    margin: auto;
+    box-shadow: 1px 3px 2px rgb(75, 74, 74);
+}
+
+#deuxiemeTrait{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: auto;
+    box-shadow: 1px 3px 2px rgb(75, 74, 74);
+}
+.blog{
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog .blogNote{
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+.blog .blogNote .article{
+    font-size: 1.6rem;
+    font-weight: 600;
+    gap: 5px;
+}
+.blog .blogNote .article:hover{
+    color: #cf9c3b;
+}
+.blog .blogNote .blog-content .article-title{
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.blog .blogNote .blog-content form{
+    width: 70%;
+    height: auto;
+    gap: 5px;
+}
+
+/* ..........................PARTIE BOISSON ......................... */
+
+.boisson{
+    background: linear-gradient(#fff), fixed no-repeat;
+    min-height: 100vh;
+    margin: 0 2rem;
+}
+.boisson .container {
+    background: #F1ECE3;
+}
+
+
+.boisson .blog{
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+}
+.boisson .blog .blogNote{
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+.blog .blogNote .article{
+    font-size: 2.6rem;
+    font-weight: 600;
+    gap: 5px;
+}
+.blog .blogNote .article:hover{
+    color: #cf9c3b;
+}
+.blog .blogNote .blog-content .article-title{
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.blog .blogNote .blog-content form{
+    width: 90%;
+    height: auto;
+    gap: 5px;
+}
+
+.boisson .blog .imgBoisson{
+    overflow: hidden;
+}
+.boisson .blog .imgBoisson img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+.boisson .blog .imgBoisson:hover{
+    transform: scale(1.2);
+}
+.blog .blogNote .blog-content form .btn{
+    align-items: end;
+}
+
+/* .......................PARTIE DESSERT .............................. */
+
+.dessert{
+    background: linear-gradient(#fff), fixed no-repeat;
+    min-height: 100vh;
+    margin: 0 2rem;
+}
+.dessert .container {
+    background: #F1ECE3;
+}
+
+
+.dessert .blog{
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+}
+.dessert .blog .blogNote{
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+.blog .blogNote .article{
+    font-size: 2.6rem;
+    font-weight: 600;
+    gap: 5px;
+}
+.blog .blogNote .article:hover{
+    color: #cf9c3b;
+}
+.blog .blogNote .blog-content .article-title{
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 15px;
+}
+
+.blog .blogNote .blog-content form{
+    width: 90%;
+    height: auto;
+    gap: 5px;
+}
+
+.dessert .blog .imgBoisson{
+    overflow: hidden;
+}
+.dessert .blog .imgBoisson img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+.dessert .blog .imgBoisson:hover{
+    transform: scale(1.2);
+}
+.blog .blogNote .blog-content form .btn{
+    align-items: end;
+}
+
+/* ......................PARTIE PAYMENT ............................. */
+
+.payment .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment{
+    background: linear-gradient(#F1ECE3), fixed no-repeat;
+    min-height: 100vh;
+    margin: 0 2rem;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 5px 12px -2px rgba(0,0,0,0.1) 0 18px 36px -6px rgba(0,0,0,0.1);
+}
+.payment .box-container{
+    padding: 2rem;
+    border-radius: 3rem;
+    background: #ffff;
+}
+.payment .row .category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+} 
+
+.payment .row .category label{
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.imgName span{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.payment .imgName img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.payment .row .imgName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.payment .hidden{
+    display: none;
+}
+
+/* ......................PARTIE RESERVATION ....................... */
+
+.order-form {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/restaurant-interieur.jpg) center center no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    align-items: center;
+}
+.order-form form{
+    /* padding-top: 125px; */
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.order-form form .row{
+   
+    flex: 1 1 45rem;
+    padding:0 2rem;
+    text-align: center;
+}
+.order-form h2{
+    font-size: 3.5rem;
+    font-family: serif;
+    color: #ffff;
+}
+.order-form form .row .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.order-form form .row .inputBox span{
+    color: #000;
+   font-style: 2rem;
+   /* padding-left: 2rem; */
+
+} 
+.order-form form .row .inputBox input{
+   width: 100%;
+   font-style: 1.7rem;
+   
+}
+.order-form form button{
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    
+}
+
+/* ..........................PARTIE TEMOIGNAGE ................... */
+
+.mess .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.mess .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.mess .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #000;
+    padding: 2rem 0;
+}
+.mess .box-container .box .toff{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ........................PARTIE FOOTER ...................... */
+
+.contact{
+    margin: 0;
+    padding: 0 1rem;
+}
+.contact .row{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    align-items: center;
+    background: #b64225;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .map{
+    flex: 1 1 45rem;
+    margin-top: 3rem;
+    border-radius: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row .adresse h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+    font-style: 2rem;
+}
+.contact .row .adresse h5{
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffff;
+    font-style: 2rem;
+}
+.contact .row .call{
+    margin-right: 3rem;
+    margin-top: -9rem;
+    align-items: center;
+}
+.contact .row .call h3{
+    text-transform: uppercase;
+    color: #ffff;
+    font-style: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+.contact .row .call h5{
+    text-transform: capitalize;
+    color: #ffff;
+    font-style: 2rem;
+    gap: 5px;
+    padding: 0.3rem 0;
+}
+.contact .row .logoText{
+    margin-top: 3rem;
+    min-height: 30vh;
+    width: 100%;
+    border-radius: 35px;
+    background-color: #fff;
+
+}
+.contact .row .logoText h5{
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    font-style: 2rem;
+}
+.contact .row .logoText ul{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.contact .row .logoText h5{
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    font-style: 2rem;
+}
+
+
