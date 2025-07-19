@@ -95,7 +95,7 @@ section{
 /* .....................PARTIE SECTION ACCUEIL ............................ */
 
 .principal{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/fond01.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/fond01.jpg) center center no-repeat;
     min-height: 100vh;
     background-size: cover;
     margin: 0 30px;
@@ -385,12 +385,12 @@ h2{
 
 /* ......................PARTIE PAYMENT ............................. */
 
-.payment .row{
+.payement .row{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.payment{
+.payement{
     background: linear-gradient(#F1ECE3), fixed no-repeat;
     min-height: 100vh;
     margin: 0 2rem;
@@ -398,12 +398,12 @@ h2{
     padding: 20px;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 5px 12px -2px rgba(0,0,0,0.1) 0 18px 36px -6px rgba(0,0,0,0.1);
 }
-.payment .box-container{
+.payement .box-container{
     padding: 2rem;
     border-radius: 3rem;
     background: #ffff;
 }
-.payment .row .category{
+.payement .row .category{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -412,7 +412,7 @@ h2{
     padding-top: 10px;
 } 
 
-.payment .row .category label{
+.payement .row .category label{
     width: 100%;
     height: 120px;
     padding: 20px;
@@ -429,25 +429,25 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.payment .imgName img{
+.payement .imgName img{
         display: flex;
         justify-content: center;
         align-items: center;
 }
-.payment .row .imgName {
+.payement .row .imgName {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
-.payment .hidden{
+.payement .hidden{
     display: none;
 }
 
 /* ......................PARTIE RESERVATION ....................... */
 
 .order-form {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/restaurant-interieur.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/restaurant-interieur.jpg) center center no-repeat;
     min-height: 100vh;
     background-size: cover;
     align-items: center;
