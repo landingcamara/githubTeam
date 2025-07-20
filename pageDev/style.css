@@ -59,6 +59,9 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 3px 1px 3px rgba(255,255,255,0.54);
 }
+.cc-navbar form input{
+    width: 400px;
+}
 .cc-navbar form button{
     background-color: #cf9c3b;
 }
@@ -379,8 +382,12 @@ h2{
 .dessert .blog .imgBoisson:hover{
     transform: scale(1.2);
 }
+
 .blog .blogNote .blog-content form .btn{
-    align-items: end;
+    text-align: center;
+    margin: 20px;
+    width: 100px;
+    
 }
 
 /* ......................PARTIE PAYMENT ............................. */
@@ -478,7 +485,12 @@ h2{
 .order-form form .row .inputBox span{
     color: #000;
    font-style: 2rem;
-   /* padding-left: 2rem; */
+   padding: 0.6rem;
+
+} 
+.order-form form .row .inputBox label{
+    color: #000;
+   padding: 0.6rem;
 
 } 
 .order-form form .row .inputBox input{
@@ -495,19 +507,34 @@ h2{
 
 /* ..........................PARTIE TEMOIGNAGE ................... */
 
+.mess{
+    background: linear-gradient(#F1ECE3) no-repeat;
+    min-height: 100vh;
+    margin: 0 2rem; 
+    font-size: cover;
+}
+.mess .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: serif;
+    padding: 2rem 0;
+    color: #b64225;
+}
 .mess .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
 }
 .mess .box-container .box{
-    border: var(--border);
+    border: 1px rgba(0,0,0,0.2) solid;
+    border-radius: 0 6rem 0 6rem;
+    background-color: #fff;
     text-align: center;
     padding: 3rem 2rem;
 }
 .mess .box-container .box p{
-    font-size: 1.6rem;
-    line-height: 1.8;
+    font-size: 1.05rem;
+    line-height: 1.5;
     color: #000;
     padding: 2rem 0;
 }
@@ -516,6 +543,21 @@ h2{
     width: 7rem;
     border-radius: 50%;
     object-fit: cover;
+}
+.mess .box-container .box .icone{
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+}
+.mess .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #a87d2c;
+}
+.mess .box-container .box .stars {
+    font-size: 1.2rem;
+    color: var(--main-color);
 }
 
 
