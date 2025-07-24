@@ -57,6 +57,7 @@ let quantite3 = 0;
   const paypalMethod =document.getElementById('paypalMethod');
 
  
+  select.forEach(select => {
     select.addEventListener('change', function (){
       //Masquer tous les divs
       waveMethod.classList.add('hidden');
@@ -72,4 +73,42 @@ let quantite3 = 0;
         paypalMethod.classList.remove('hidden');
       }
     });
-  
+  });
+
+    // ...................................SLIDE.................
+
+const buttons = document.querySelectorAll(".btn");
+const slides = document.querySelectorAll(".slide");
+
+// Tableau img : [0, 1, 2]
+
+buttons.forEach((button) =>{
+    button.addEventListener("click", (e) =>{
+        const calcNextSlide = e.target.id  ==="next" ? 1 : -1;
+        const slideActive = document.querySelector(".active");
+
+        newIndex =calcNextSlide + [...slides].indexOf(slideActive);
+
+        if(newIndex<0) newIndex = [...slides].length - 1
+        if(newIndex >=[...slides].length) newIndex = 0;
+        slides[newIndex].classList.add("active");
+
+        
+        slideActive.classList.remove("active");
+        //console.log(e.target.id);
+    });
+});
+
+const btnTop = document.getElementById("btnTop");
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+};
+
+btnTop.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
