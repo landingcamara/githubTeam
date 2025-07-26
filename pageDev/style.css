@@ -520,7 +520,7 @@ h2{
 /* ......................PARTIE RESERVATION ....................... */
 
 .order-form {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/restaurant-interieur.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/images/reservation-menu.jpg) center center no-repeat;
     min-height: 100vh;
     background-size: cover;
     align-items: center;

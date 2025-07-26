@@ -18,7 +18,7 @@
   <body>
     <header>
         <div class="partie-1 fixed-top navbar navbar-nav w-100">
-            <h6 class="col md-6">Horaires d'ouvertures 8H-20H</h6>
+            <h6 class="col md-6">Horaires d'ouvertures 8H-20H / 7jour/7jour</h6>
             <ul class="col md-6">
                 <li><a href="#"><img src="../assets/icones/twitterx.png" width="10px" height="10px" alt=""></a></li>
                 <li><a href="#"><img src="../assets/icones/tiktok.png" width="10px" height="10px" alt=""></a></li>
@@ -591,15 +591,18 @@
     <!-- RESERVATION -->
     <section class="order-form mb-2 py-5" id="order-form">
         <div class="container">
+            
                 <form>
                     <h2 class="merriweather text-center text-ligth mb-4">Formulaire de réservation</h2>
                     <div class="row">
                         <div class="col-md-6 col-sm">
-                            <div class="inputBox mb-3">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-user"></i></label>
+                                
                                 <input type="text" class="form-control" placeholder="Votre Nom">
                             </div>
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-utensils"></i></label>
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Choisir un menu</option>
@@ -611,8 +614,9 @@
                                     <option value="3">Yassa Poulet</option>
                                 </select>
                             </div>
-                            <div class="inputBox mb-3">
-                                <label class="input-group-text" for="inputGroupSelect02"><i class="fas fa-sort-numeric-up-alt"></i></label>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-sort-numeric-up-alt"></i></label>
+                               
                                 <select class="form-select" id="inputGroupSelect01">
                                     <option selected>Nombre de Tables</option>
                                     <option value="1">Table VIP</option>
@@ -620,25 +624,25 @@
                                     <option value="3">Table pour plusieurs</option>
                                 </select>
                             </div>
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon2"><i class="fas fa-calendar"></i></span>
                                 <input type="datetime" class="form-control" placeholder="jj/mm/aa">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm">
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <input type="email" class="form-control" placeholder="Votre E-mail">
                                 <span class="input-group-text" id="basic-addon2"><i class="fas fa-at"></i></span>
                             </div>
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <input type="tel" class="form-control" placeholder="Ex : 00 123 45 67">
                                 <span class="input-group-text" id="basic-addon3"><i class="fas fa-phone"></i></span>
                             </div>
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="Adresse ex: Fann rue 11">
                                 <span class="input-group-text" id="basic-addon4"><i class="fas fa-home"></i></span>
                             </div>
-                            <div class="inputBox mb-3">
+                            <div class="input-group mb-3">
                                 <input type="time" class="form-control" placeholder="">
                                 <!-- <span class="input-group-text" id="basic-addon2"><i class="fas fa-clock"></i></span> -->
                             </div>
@@ -646,11 +650,11 @@
         
                     </div>
                     <div class="row">
-                        <div class="inputBox">
+                        <div class="input-group my-2">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-solid  fa-users"></i></span>
                             <input type="text" class="form-control" placeholder="Préciser le nombre de personnes Ex: 15">
                         </div>
-                        <div class="inputBox">
+                        <div class="input-group my-2">
                             <span class="input-group-text"><i class="fa-solid fa-circle-info"></i></span>
                             <textarea class="form-control" aria-label="With textarea" placeholder="Autres information"></textarea>
                         </div> 
